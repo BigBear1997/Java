@@ -1,0 +1,25 @@
+类，杯子是一种类，灯是类，动物是类；
+
+对象，玻璃杯，白炽灯，马是对象；
+
+属性，半径 颜色 材质 。
+
+java中，在类中定义对象， 类apple创建对象：apple app=new apple();类中有多种对象，对象的行为过程成为方法，方法通过一堆堆函数实现；
+
+创建函数 public void f(){};与主函数平行并被调用；格式 访问限制 返回类型 函数名；
+
+匿名对象：apple app=new apple()  →f(new apple())即使
+
+对象调用方法实例：
+
+import javax.swing.JOptionPane;
+
+public class j1 {
+  public void f(){
+
+JOptionPane.showMessageDialog(null, "HELLO","方法",1);
+}
+public static void main(String args[])
+{
+j1  aa=new j1();
+aa.f();}}

@@ -1,0 +1,31 @@
+applet
+
+代码
+
+java
+
+import java.awt.applet;
+
+...............
+
+public class applet{
+
+public void init(){}            //java包方法
+
+public void start(){}
+
+                                       //chushihua方法
+
+}
+
+html
+
+<html>
+
+<body>
+
+<applet code="applet.class" height=100 width=122  /applet>
+
+</body>
+
+</html>

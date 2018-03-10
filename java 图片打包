@@ -1,0 +1,6 @@
+1.将图片和java文件打包jar，图片跟随jar包， 从而防止图片丢失
+Toolkit t=frame-name.getTooLKIT();
+java.net.url a=frame-name.class.getresouse("/path-name/pic-name");//此路径才能在jar包正常运行，path在src下
+Imagin i=t.getImagin(a）
+2将java茶杯替换为其他图标
+frame.seticonImagin(i)//  接上i

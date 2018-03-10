@@ -1,0 +1,18 @@
+1.调用浏览器
+
+java .net.url   u=java.net.url.create(); //adress
+
+java.awt.desktop d=java.awt.desktop.getdesktop();//get desk
+
+if(d.isSuported(java.awt.desktop.Action.browse) //try browse
+
+try{ 
+
+d.browse(u);
+
+}
+
+catch(java.lang.NullPointerException e1){ e1.printStackTrace();  }catch(java.io.IOException E)
+
+{E.printStackTrace();}// throws errors
+   

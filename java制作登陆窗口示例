@@ -1,0 +1,6 @@
+java制作登陆窗口；需要的技术；菜鸟级别：frame，组件 button panel label；界面布局 layout；
+frame 位置setLocationRalativeto(null）；让frame从中间跳出而不是从左上角调出来；
+采用flowlayout布局，即组件一排一排往下挤，因此窗口扩大会变形，采用方法setResizeble(false);使最大化标签失灵；图片插入imageicon方法 对象加入图片地址   ，原理即让contentpane层透明，网页载入技术
+java.net.URI U=java.net.URI.create(url);  java.awt.Desktop  de= java.awt.Desktop.getDesktop();
+    if(de.isSupported(java.awt.Desktop.Action.BROWSE))此方法调用默认浏览器打开网页；
+button美化，setContentAreaFilled(false) 将button边角美化

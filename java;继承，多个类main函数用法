@@ -1,0 +1,56 @@
+继承 extends关键字；子类继承父类所有的成员变量；继承变量却不继承变量值value；在公共类中主函数调用该类；
+
+只能有一个main函数，类A main函数中创建类B的对象，即可接入该类B，
+
+在公共类中private修饰的成员变量在之类中无法被继承，私有成员变量在类别中无法传递；在类内可以被调用；
+
+import java.util.Scanner;
+
+
+
+
+public class fftt {
+ Scanner  i=new Scanner(System.in);
+ float Radius=i.nextFloat();
+public  final  double pi=3.141592654;
+public void getArea(){
+double  Area=Radius*pi*Radius;
+System.out.println(Area+"mianji");
+}
+public  void getPer(){
+double per=2*pi*Radius;
+System.out.println(per+"zhouchang");
+}
+public static void main(String args[]) 
+{
+fftt a=new fftt();
+Cyl b=new Cyl();
+
+
+a.getArea();
+a.getPer(); 
+b.getV(); 
+System.exit(0);
+
+
+}
+}
+class  Cyl  extends  fftt{
+//Cyl (float r){     super(Radius);   }
+
+
+Scanner i2=new Scanner(System.in);
+private double height=i2.nextDouble();
+//super(Radius);
+public  void  getV(){
+
+       double v=pi*Radius*Radius*height;
+       System.out.println(v+"tiji\n"+Radius+"round");
+}}
+
+
+
+
+
+
+

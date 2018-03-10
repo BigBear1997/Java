@@ -1,0 +1,39 @@
+包 swing
+类
+JFileChooser jfile；
+ui美化
+UImanager.setLookAndfeel(uimanager.getsystemlookandfeel)
+放在jfile之前
+文件流
+保存
+将text 写入file
+File file=new File(jfile.getSelectfile());     //选中文件写入·哪里
+Bufferwriter bf=new bufferwriter(new writer(file));
+bf.write(textArea.gettext());                //得到text写进file
+bf.close();
+
+jf.showDialog(jf,"save as");
+    File file=jf.getSelectedFile();
+    try {
+     BufferedWriter fi=new BufferedWriter(new FileWriter(file));
+     fi.write(f.getText());
+     fi.close();
+     } catch (FileNotFoundException e11) {e11.printStackTrace(); } catch (IOException e1) {
+     e1.printStackTrace();
+    }
+
+将file 打开到text
+File file=new File(jfile.getSelectfile());
+bufferreader bfr=new bufferreader(new filereader(file));
+string t=brf.readline()  //读取file，写在text
+brf.close();
+f.setText(t);
+
+File file_o=openv.getSelectedFile();
+    if(file_o.getName().endsWith(".txt"))
+    {
+      BufferedReader fi;
+      try {
+       fi = new BufferedReader(new FileReader(file_o));
+       f.setText(fi.readLine());
+       fi.close();

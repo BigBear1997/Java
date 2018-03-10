@@ -1,0 +1,18 @@
+得到当前screen 大小
+
+Demesion s=Toolkit.getDefaultToolkit().getScreenSize();
+
+setlayout(null);
+
+btn.setBounds(x,y,s.width,s.height);
+
+//************************************//
+
+Dimension si=Toolkit.getDefaultToolkit().getScreenSize();
+  int width=si.width;
+  int height=si.height;
+  l1.setBounds(0, 0, width, height/20);
+   t.add(l1);
+   l1.add(save);save.setBounds(0,0,100,height/20);
+   l1.add(nEdit);nEdit.setBounds(100,0,100,height/20);
+   l1.add(open);open.setBounds(200,0,100,height/20);

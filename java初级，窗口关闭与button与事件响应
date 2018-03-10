@@ -1,0 +1,12 @@
+窗口关闭事件
+
+frame默认窗口是不能被x掉，需要给x一个关闭响应，f.add窗体监听器（匿名适配器（）{
+
+方法 windowclosing（windowevent e）{}}）；这里的方法名不能改，该方法名为库方法；
+
+button响应
+
+点击button有具体行为，b.addactionlistener(new actionlistener(){
+
+actionperfomed(windowevent e){}});方法名仍然不能改，库；
+
